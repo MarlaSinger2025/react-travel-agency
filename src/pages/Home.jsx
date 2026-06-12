@@ -10,7 +10,6 @@ const Home = () => {
 			<Navbar />
 			<main className='container mx-auto px-4 py-8 mb-auto'>
 				<div className='space-y-16'>
-					<h1>Test Home</h1>
 					<Search />
 					<WhyBook />
 					<PopDests />

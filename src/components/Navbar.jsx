@@ -1,15 +1,25 @@
+import { NavLink, Link } from "react-router";
+
 const Navbar = () => {
+
+  const linkStyle = ({ isActive }) => ({
+    color: isActive ? ' #FF69B4' : '"#4fc3f7',
+    fontWeight: isActive ? 'bold' : 'normal',
+    textDecoration: isActive? 'underline' : 'none',
+
+  });
+
   return (
     <div className='navbar bg-base-200 shadow-sm'>
       <div className='flex-1'>
-        <a href='/' className='btn btn-ghost text-xl'>
+        <Link className='btn btn-ghost text-xl' to='/' >
           Travel
-        </a>
+        </Link>
       </div>
       <div className='navbar-end'>
         <ul className='menu menu-horizontal items-baseline gap-2'>
           <li>
-            <a href='/'>Home</a>
+            <NavLink style={linkStyle} to='/' >Home</NavLink>
           </li>
           <li>
             <a href='/about'>About</a>

@@ -11,14 +11,13 @@ function App() {
 	return (
 		<Routes>
 			<Route path='/' element={<Home />} />
+			<Route  path='/about' element={<About />} />
+			<Route  path='/contact' element={<Contact />} />
+			<Route  path='/destinations' element={<Destinations />} />
+			<Route  path='/singledest' element={<SingleDest />} />
+			<Route  path='*' element={<NotFound />} />
 		</Routes>
 	)
 }
 
 export default App;
-
-	// return <About />;
-	// return <Contact />;
-	// return <Destinations />;
-	// return <SingleDest />;
-	// return <NotFound />;

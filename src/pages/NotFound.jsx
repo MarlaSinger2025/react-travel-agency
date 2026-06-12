@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 const NotFound = () => {
 	return (
 		<div className='flex flex-col items-center'>
@@ -10,7 +12,9 @@ const NotFound = () => {
 					😢
 				</span>
 			</p>
+			<Link to='/' >
 			<button className='btn btn-primary mt-4'>Go Back</button>
+			</Link>
 		</div>
 	);
 };
